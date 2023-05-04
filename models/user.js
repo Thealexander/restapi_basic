@@ -22,7 +22,7 @@ const UserSchema = Schema({
         required: true,
         enum: ['ADMIN', 'USER']
     },
-    status: {
+    estado: {
         type: Boolean,
         default: true
     },
