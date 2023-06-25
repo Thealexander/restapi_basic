@@ -6,9 +6,16 @@ class Server {
     constructor() {
         this.app = express();
         this.port = process.env.PORT || 3001;
+        this.path = {
+            auth: '/api/auth',
+            buscar: '/api/buscar',
+            categorias: '/api/categorias',
+            usuarios: '/api/usuarios',
+            productos: '/api/productos'
+        }
+        //  this.usuarioPath = '/api/usuarios';
+        //  this.authPath = '/api/auth';
 
-        this.usuarioPath = '/api/usuarios';
-        this.authPath = '/api/auth';
         //Databases CN
         this.cn();
 
@@ -33,8 +40,11 @@ class Server {
         this.app.use(express.static('public'));
     }
     routes() {
-        this.app.use(this.authPath, require('../routes/auth'));
-        this.app.use(this.usuarioPath, require('../routes/user'));
+        this.app.use(this.path.auth, require('../routes/auth'));
+        this.app.use(this.path.buscar, require('../routes/buscar'));
+        this.app.use(this.path.categorias, require('../routes/categorias'));
+        this.app.use(this.path.productos, require('../routes/productos'));
+        this.app.use(this.path.usuarios, require('../routes/user'));
     }
     listen() {
         this.app.listen(this.port, () => {

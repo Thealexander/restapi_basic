@@ -41,5 +41,4 @@ router.delete('/:id', [
 router.patch('/', usuariosPatch);
 
 
-
 module.exports = router;
