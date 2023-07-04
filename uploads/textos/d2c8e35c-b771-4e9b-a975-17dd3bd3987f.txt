@@ -1,0 +1,166 @@
+Guacamole
+ algunos pesan mas de 1.7 gb
+ pase que se queda almacenado dos veces un archivo
+ el que falla y el nuevo
+ estos son respaldos, se debe elimanr el mas viejo
+ estar revisando los respaldos
+ es un servidor que realiza los respaldos
+ 
+ cliente: APOLO
+ Nagios es usado para se;alizar presupeuestos
+ 
+ se hace respaldo a medio dia
+ se marcan las horas que se realiza la facturacion
+ lo maximo a ahcer por semana es 10 horas
+ 
+ se notifica que las 10 horas se acabaron ys e deben seguir la siguiente semana
+ 
+ 170.0.0.36
+ 10 respaldos
+ en disco d backuo
+  
+  \mystranse
+  170.0.1.06
+
+  s3 amazon
+  z`
+ SERVIDORES DE NUEVA YORK
+ 
+ acceder con cisco
+ es mejor desde la web
+ ETAC
+ FAXS DIGITALES ES EL giro de negocios
+ 
+ se tiene que esta liberando cada dos meses la liberacion de las cintas, 
+ 
+ clic en recyclar y despues dar formatear
+ no tocar hp defaault...
+ el mismo ppol
+ no valores x defecto
+ despues dar forzar la operacion
+ 5mints limpia la cinta aprx
+ 
+ 
+ 15/6/22
+     170.0.0.10  --->
+	 am y medio dia
+	 st01bk01
+	 
+	 asistente con duplicati
+	 tomsar bkdiario
+	 tomar capturas para demostrar captura exitosa
+	 
+	 
+	 
+	 duplicati
+	 
+	 restaurar base de datos
+	 enviar lo respaldado a 170.0.0.13 c$
+	 eliminar apolo2
+	 y restaurar
+	 
+	 
+	 
+	 
+	 la comunicacion slo es allan
+	 hayq ue revisar bien el ingles 
+	 los correos se archivan no se borran
+	 se manejan 3 edificios
+	 lo eli, josy josh no se archivan
+	 
+	 
+	 normalmente mandan unb subject que lleva el texto
+	 mil numeros para fax se configutrasn en el cliente
+	 
+	 al hablar de numeros son faxes son crc
+	 esto es con el buzon de itax y de allan 
+	 el sistema de monitoreo es nagios
+	 en centro 6
+	 en ain en rocky linux
+	 
+	 nagio da las alertas
+	 son rarros losn discos al revisar pues se limpian estos al pasarse unos informes
+	 
+	 
+	 ente los 6 y 8 los servidores de fax envian sus informes y comienzan a saturararse
+	 
+	 
+	 
+	 montcopa es un servidor de faxes y es qque lleva las configuraciones no se toca al menos que 
+	 
+	 virtualizor
+	 promox
+	 
+	 servidores estann en francia y los aws en virginia
+	 y puppy en usa
+	 
+	 nuevo york tiene yira
+	 tienen su wixki
+	 y atalasia
+	  yira es para tickets
+	   big buked que es como gitlab
+	   
+	   josh escribe bastante por errores de sistema
+	   
+	   buscarmos un cliente llamado tod  porque sonn cambios de sistema
+	    se registr todo
+		
+		
+		como crc o como allan se crean tickets de camios
+		
+		tarea que siempre se trabaja T server admin 6horas
+		se trabahjja a manera de replica, recien motnado esta en NY
+		
+		se trbaja con dos vlan 10 /130
+		 broad test
+		 
+		 el otro
+		 trabahja con 5 vlans
+		 
+		 192.168.15.10
+		 
+		 
+		 esra bhace las credenciales
+		 despues se procede a montar todas las maquinas virtuales
+		 dev extensiones son de desarrollo
+		 
+		 
+		 buen prooyecto: documentar cada servidor
+		 
+		 
+		 TOOD LO DE VOIP  spam
+		 
+		 
+		 
+		 rdstelabook 1648078878.sql
+		 
+		 --------------------------
+		 las bases de datos del cliente 
+		 novo  en el .35
+		 Instalacion de un cliente Novus
+		 configuracion del cliente obdc
+		 
+		 se tiene que copiar de apolo 15 los archivos de access mde una vez realizada la conexion
+		 revisar la contrase;a de novus esta en la docymentacion de apolo 
+		 para entrar al access es dar "shift + enter"
+		 
+		 
+		 
+		 ------------------------------------------------------------------
+		 
+		 tarea para esta semana de fijar que usaurio tien que permisos en que carpeta 
+		   n n      
+		   
+		    mkdir -p /var/www/testserver.com/html
+			sudo chown -R $USER:$USER /var/www/testserver.com/html
+sudo chown -R $USER:$USER /var/www/testserver.com/html
+
+
+
+sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/testserver.com
+
+
+ln -s /etc/nginx/sites-available/testserver.com /etc/nginx/sites-enabled/
+docker run --name sqlpad -p 127.0.0.1:3000:3000 --volume ~/docker-volumes/sqlpad-postgres:/var/lib/sqlpad --detach sqlpad/sqlpad:latest
+
+docker run --name sqlpad -p 127.0.0.1:3000:3000 --volume ~/docker-volumes/sqlpad-postgres:/var/lib/sqlpad --detach sqlpad/sqlpad:latest --
